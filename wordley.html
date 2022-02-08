@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="wordley.css">
+    <script src="wordley.js"></script>
+</head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<body>
+    <div id="squares">
+        <div id="rowone">
+            <div class="square" id="square11">
+                <h class="squaretext">-</h>
+            </div>
+            <div class="square" id="square12">
+                <h class="squaretext">-</h>
+            </div>
+            <div class="square" id="square13">
+                <h class="squaretext">-</h>
+            </div>
+            <div class="square" id="square14">
+                <h class="squaretext">-</h>
+            </div>
+            <div class="square" id="square15">
+                <h class="squaretext">-</h>
+            </div>
+        </div>
+        <div id="rowtwo">
+            <div class="square" id="square21">
+                <h class="squaretext">-</h>
+            </div>
+            <div class="square" id="square22">
+                <h class="squaretext">-</h>
+            </div>
+            <div class="square" id="square23">
+                <h class="squaretext">-</h>
+            </div>
+            <div class="square" id="square24">
+                <h class="squaretext">-</h>
+            </div>
+            <div class="square" id="square25">
+                <h class="squaretext">-</h>
+            </div>
+        </div>
+        <div id="rowthree">
+            <div class="square" id="square31">
+                <h class="squaretext">-</h>
+            </div>
+            <div class="square" id="square32">
+                <h class="squaretext">-</h>
+            </div>
+            <div class="square" id="square33">
+                <h class="squaretext">-</h>
+            </div>
+            <div class="square" id="square34">
+                <h class="squaretext">-</h>
+            </div>
+            <div class="square" id="square35">
+                <h class="squaretext">-</h>
+            </div>
+        </div>
+        <div id="rowfour">
+            <div class="square" id="square41">
+                <h class="squaretext">-</h>
+            </div>
+            <div class="square" id="square42">
+                <h class="squaretext">-</h>
+            </div>
+            <div class="square" id="square43">
+                <h class="squaretext">-</h>
+            </div>
+            <div class="square" id="square44">
+                <h class="squaretext">-</h>
+            </div>
+            <div class="square" id="square45">
+                <h class="squaretext">-</h>
+            </div>
+        </div>
+        <div id="rowfive">
+            <div class="square" id="square51">
+                <h class="squaretext">-</h>
+            </div>
+            <div class="square" id="square52">
+                <h class="squaretext">-</h>
+            </div>
+            <div class="square" id="square53">
+                <h class="squaretext">-</h>
+            </div>
+            <div class="square" id="square54">
+                <h class="squaretext">-</h>
+            </div>
+            <div class="square" id="square55">
+                <h class="squaretext">-</h>
+            </div>
+        </div>
+        <div id="rowsix">
+            <div class="square" id="square61">
+                <h class="squaretext">-</h>
+            </div>
+            <div class="square" id="square62">
+                <h class="squaretext">-</h>
+            </div>
+            <div class="square" id="square63">
+                <h class="squaretext">-</h>
+            </div>
+            <div class="square" id="square64">
+                <h class="squaretext">-</h>
+            </div>
+            <div class="square" id="square65">
+                <h class="squaretext">-</h>
+            </div>
+        </div>
+    </div>
+    <div id="toprow">
+        <button id="q" class="key" onclick="letter('Q')">Q</button>
+        <button id="w" class="key" onclick="letter('W')">W</button>
+        <button id="e" class="key" onclick="letter('E')">E</button>
+        <button id="r" class="key" onclick="letter('R')">R</button>
+        <button id="t" class="key" onclick="letter('T')">T</button>
+        <button id="y" class="key" onclick="letter('Y')">Y</button>
+        <button id="u" class="key" onclick="letter('U')">U</button>
+        <button id="i" class="key" onclick="letter('I')">I</button>
+        <button id="o" class="key" onclick="letter('O')">O</button>
+        <button id="p" class="key" onclick="letter('P')">P</button>
+    </div>
+    <div id="midrow">
+        <button id="a" class="key" onclick="letter('A')">A</button>
+        <button id="s" class="key" onclick="letter('S')">S</button>
+        <button id="d" class="key" onclick="letter('D')">D</button>
+        <button id="f" class="key" onclick="letter('F')">F</button>
+        <button id="g" class="key" onclick="letter('G')">G</button>
+        <button id="h" class="key" onclick="letter('H')">H</button>
+        <button id="j" class="key" onclick="letter('J')">J</button>
+        <button id="k" class="key" onclick="letter('K')">K</button>
+        <button id="l" class="key" onclick="letter('L')">L</button>
+    </div>
+    <div id="botrow">
+        <button id="tab" class="key" onclick="enterGuess()">ENTER</button>
+        <button id="z" class="key" onclick="letter('Z')">Z</button>
+        <button id="x" class="key" onclick="letter('X')">X</button>
+        <button id="c" class="key" onclick="letter('C')">C</button>
+        <button id="v" class="key" onclick="letter('V')">V</button>
+        <button id="b" class="key" onclick="letter('B')">B</button>
+        <button id="n" class="key" onclick="letter('N')">N</button>
+        <button id="m" class="key" onclick="letter('M')">M</button>
+        <button id="tab" class="key" onclick="deleteLetter()">DEL</button>
+    </div>
+    <h1 id="info"></h1>
+    <!-- <h2 id="test"></h2> -->
+</body>

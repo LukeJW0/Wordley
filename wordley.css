@@ -1,0 +1,82 @@
+body {
+    background-color: rgb(100, 100, 100);
+}
+
+#toprow {
+    width: 100%;
+    background-color: none;
+    text-align: center;
+    margin-top: 5%;
+}
+#midrow {
+    margin-top: 0%;
+    width: 100%;
+    background-color: none;
+    text-align: center;
+}
+#botrow {
+    margin-top: 0%;
+    width: 100%;
+    background-color: none;
+    text-align: center;
+}
+
+.key {
+    width: 8%;
+    height: 0;
+    padding-bottom: 7%;
+    text-align: center;
+    font-size: 3vw;
+    margin-bottom: 0.4%;
+    border-radius: 12px;
+    border: 0px solid rgb(200, 200, 200);
+    background-color: rgba(50,50,50,1);
+    color: white;
+    padding-top: 3%;
+}
+
+.key:active {
+    filter: brightness(85%);
+}
+
+#tab {
+    width: 13%;
+}
+
+#rowone, #rowtwo, #rowthree, #rowfour, #rowfive, #rowsix {
+    width: 95%;
+    text-align: center;
+    height: 16vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.square {
+    border: 2px solid rgb(200, 200, 200);
+    width: 15%;
+    height: 0%;
+    padding-bottom: 14%;
+    padding-top: 1%;
+    display: inline-block;
+    margin-left: 0.12%;
+    margin-right: 0.12%;
+}
+
+.squaretext {
+    text-align: center;
+    font-size: 9vw;
+    font-family: 'Verdana';
+    font-weight: normal;
+    color: rgb(100, 100, 100);
+}
+
+#info {
+    text-align: center;
+    font-size: 5vw;
+    font-family: 'Verdana';
+    color: rgb(100, 0, 0);
+}
+
+h2 {
+    color: rgb(100, 100, 100);
+}
