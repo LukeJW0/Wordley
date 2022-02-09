@@ -14,7 +14,7 @@ function loaded() {
     var randomNum = getRandomArbitrary(1, 585);
     // document.getElementById("test").innerText = answerbank[Math.round(randomNum)];
     wordToGuess = answerbank[Math.round(randomNum)];
-    // wordToGuess = "onion";
+    // wordToGuess = "abron";
 }
 
 function letter(letter) {
@@ -53,6 +53,7 @@ function enterGuess() {
     wordToGuess = wordToGuess.toUpperCase();
 
     var preventDuplicatesArr = [];
+    var preventGreenDuplicatesArr = [];
     var changedLettersArr = [];
 
     for (let i = 0; i < 5; i++) {
@@ -68,6 +69,7 @@ function enterGuess() {
                     document.getElementById(guessedWord[i].toLowerCase()).style.backgroundColor = "yellow";
                     document.getElementById(guessedWord[i].toLowerCase()).style.color = "black";
                     preventDuplicatesArr.push(guessedWord[i]);
+                    preventGreenDuplicatesArr.push(guessedWord[i]);
                     changedLettersArr.push(guessedWord[i]);
 
                 }
@@ -76,11 +78,14 @@ function enterGuess() {
                 }
             }
         }
-        if (guessedWord[i] == wordToGuess[i]) {
-            document.getElementById("square" + row + (i+1)).style.backgroundColor = "green";
-            // yellowKeys.splice(yellowKeys.indexOf(guessedWord[i]), 1);
-            document.getElementById(guessedWord[i].toLowerCase()).style.backgroundColor = "green";
-            document.getElementById(guessedWord[i].toLowerCase()).style.color = "black";
+        if (preventGreenDuplicatesArr.includes(guessedWord[i]) == true) {
+            if (guessedWord[i] == wordToGuess[i]) {
+                document.getElementById("square" + row + (i+1)).style.backgroundColor = "green";
+                // yellowKeys.splice(yellowKeys.indexOf(guessedWord[i]), 1);
+                document.getElementById(guessedWord[i].toLowerCase()).style.backgroundColor = "green";
+                document.getElementById(guessedWord[i].toLowerCase()).style.color = "black";
+            }
+            preventGreenDuplicatesArr.splice(preventGreenDuplicatesArr.indexOf(guessedWord[i]), 1);
         }
     }
 
